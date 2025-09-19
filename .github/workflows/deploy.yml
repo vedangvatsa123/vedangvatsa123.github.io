@@ -23,9 +23,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Touch .nojekyll
-        run: touch ./out/.nojekyll
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -33,3 +30,5 @@ jobs:
           folder: out
           token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
+          clean-exclude: |
+            .nojekyll
