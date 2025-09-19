@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "vedang-profile",
+      "description": "Profile picture of Vedang Vatsa",
+      "imageUrl": "https://picsum.photos/seed/vedang/200/200",
+      "imageHint": "portrait man"
+    }
+  ]
 }
